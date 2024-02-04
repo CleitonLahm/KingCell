@@ -25,7 +25,8 @@ export const SearchBar = styled.input`
   padding: 0 8px;
   color: #000;
   border: none;
-  border-radius: 8px
+  border-radius: 8px;
+  position: relative;
 `
 
 export const LoginContainer = styled.div`
