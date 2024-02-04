@@ -12,5 +12,10 @@ const GlobalStyles =  createGlobalStyle`
   img {
     max-width: 100%;
   }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
   `
 export default GlobalStyles
