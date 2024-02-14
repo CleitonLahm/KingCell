@@ -3,6 +3,8 @@ import {BASE_URL_API} from '../../../Api'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 
+import {CardSection, CardItem, CardImg, CardTitle, CardButton} from './styles'
+
 const ProductsList = () => {
   const [data, setData] = useState([])
   
@@ -19,20 +21,20 @@ const ProductsList = () => {
   return (
     <>
       <div className='container'>
-        <div className='card'>
+        <CardSection>
           {data.map((item, index) => {
             return (
-              <div key={index} className='card_item'>
+              <CardItem key={index} className='card_item'>
                 <Link className='card_link'>
-                  <img className='card_img' src={item.image} alt='imagem do produto' />
-                  <h2 className='card_title'>{item.title}</h2>
+                  <CardImg className='card_img' src={item.image} alt='imagem do produto' />
+                  <CardTitle className='card_title'>{item.title}</CardTitle>
                   <br />
-                  <button className='card_buttom'>Mais informações</button>
+                  <CardButton className='card_buttom'>Mais informações</CardButton>
                 </Link>
-              </div>
+              </CardItem>
             )
           })}
-        </div>
+        </CardSection>
       </div>
     </>
   )
