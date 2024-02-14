@@ -8,13 +8,13 @@ import ProductsId from './components/Pages/ProductsId'
 function App() {
   return (
     <>
-    <Header />
-    <CategoriesBar />
       <BrowserRouter>
-        <Routes>
-          <Route index element={<ProductsList />}/>
-          <Route path='/ProductsId' element={<ProductsId />} />
-        </Routes>
+        <Header />
+        <CategoriesBar />
+          <Routes>
+            <Route index element={<ProductsList />}/>
+            <Route path='/ProductsId/:id' element={<ProductsId />} />
+          </Routes>
       </BrowserRouter>
     </>
   )

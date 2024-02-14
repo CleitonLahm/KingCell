@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const CategoriesContainer = styled.div`
   border-bottom: 1px solid #4B4B4D;
+  margin-bottom: 16px;
 `
 
 export const List = styled.ul`

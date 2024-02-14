@@ -10,7 +10,7 @@ const Header = () => {
     <HeaderContainer>
       <Titulo>
         <SpanKing className='titleKing'>KING</SpanKing>
-        <SpanCell className='titleCell'>CELL</SpanCell>
+        <SpanCell className='titleCell'>STORE</SpanCell>
       </Titulo>
         <SearchBar type="text" placeholder='Pesquise o seu produto'/>
         <LoginContainer>

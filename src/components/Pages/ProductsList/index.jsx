@@ -24,12 +24,12 @@ const ProductsList = () => {
         <CardSection>
           {data.map((item, index) => {
             return (
-              <CardItem key={index} className='card_item'>
-                <Link className='card_link'>
-                  <CardImg className='card_img' src={item.image} alt='imagem do produto' />
-                  <CardTitle className='card_title'>{item.title}</CardTitle>
+              <CardItem key={index}>
+                <Link to={`/ProductsId/${item.id}`}>
+                  <CardImg src={item.image} alt='imagem do produto' />
+                  <CardTitle>{item.title}</CardTitle>
                   <br />
-                  <CardButton className='card_buttom'>Mais informações</CardButton>
+                  <CardButton>Mais informações</CardButton>
                 </Link>
               </CardItem>
             )

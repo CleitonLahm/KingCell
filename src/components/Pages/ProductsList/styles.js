@@ -3,6 +3,7 @@ import styled from "styled-components"
 export const CardSection = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px
 `
 
 export const CardItem = styled.div`
@@ -10,6 +11,7 @@ export const CardItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 8px;
 `
 
 export const CardImg = styled.img`
