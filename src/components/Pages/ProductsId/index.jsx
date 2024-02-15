@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 import {BASE_URL_API} from '../../../Api'
 import { useParams } from 'react-router-dom'
