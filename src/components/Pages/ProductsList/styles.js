@@ -3,31 +3,54 @@ import styled from "styled-components"
 export const CardSection = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px
+  gap: 20px;
+`
+
+export const CardContainer = styled.div`
+  position: relative;
+  text-align: center;
 `
 
 export const CardItem = styled.div`
-  border: 1px solid black;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  
+  transition: box-shadow 0.3s ease-in-out;
+
+  border-radius: 8px;
+  text-align: center;
+  padding-bottom: 60px;
+  height: 300px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 8px;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
 `
 
 export const CardImg = styled.img`
   max-width: 150px;
+  max-height: 200px;
 `
+
 export const CardTitle = styled.h2`
   color: #222;
   font-size: 1.3rem;
+  margin-top: 10px;
 `
 
 export const CardButton = styled.button`
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
   padding: 8px 16px;
-  background-color: #EE793B;
+  background-color: #ee793b;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   font-weight: bold;
   color: #222;
+  cursor: pointer;
 `
