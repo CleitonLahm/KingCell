@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react'
 
 import {BASE_URL_API} from '../../../Api'
 import { useParams } from 'react-router-dom'
-import { Card } from './styles'
+import { ContainerProduct, CardProduct, ImgProduct, PriceProduct } from './styles'
+
+import loadingGif from '../../../assets/loading.gif'
 
 const ProductsId = () => {
   const [loaded, setLoaded] = useState(false)
@@ -22,16 +24,18 @@ const ProductsId = () => {
   }, [])
 
   return (
-    <>
-    {loaded && <h3>Carregando...</h3>}
-      <Card>
-        <img src={itemId.image} alt="imagem do produto" width={200}/>
-        <h2>{itemId.title}</h2>
-        <strong>R$: ${itemId.price}</strong>
-        <p>{itemId.description}</p>
-        <h3>{itemId.category}</h3>
-      </Card>
-    </>
+    <ContainerProduct>
+    {loaded && <img src={loadingGif} alt='gif de carregando' />}
+    {!loaded && (
+        <CardProduct>
+          <ImgProduct src={itemId.image} alt="imagem do produto" />
+          <h2>{itemId.title}</h2>
+          <PriceProduct>R$: ${itemId.price}</PriceProduct>
+          <p>{itemId.description}</p>
+          <h3>{itemId.category}</h3>
+        </CardProduct>
+      )}
+    </ContainerProduct>
   )
 }
 
