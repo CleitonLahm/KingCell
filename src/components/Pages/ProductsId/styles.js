@@ -1,8 +1,5 @@
 import styled from "styled-components"
 
-export const Card = styled.div`
-  
-`
 export const ContainerProduct = styled.div`
   position: relative;
   height: 100vh;
@@ -32,4 +29,20 @@ export const ImgProduct = styled.img`
 export const PriceProduct = styled.p`
   font-size: 24px;
   font-weight: 700;
+`
+
+export const ButtonGoBack = styled.button`
+  background-color: #ee793b;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  color: #222;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 40px;
+
+  cursor: pointer;
+
 `
