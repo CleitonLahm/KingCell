@@ -1,4 +1,3 @@
-import React from 'react';
 import { HeaderContainer, Titulo, SpanKing, SpanCell, IconItem, IconList, SearchBar,
 Login, LoginContainer } from './styles';
 
