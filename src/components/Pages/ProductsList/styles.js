@@ -12,13 +12,14 @@ export const CardContainer = styled.div`
 `
 
 export const CardItem = styled.div`
+position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);  
   transition: box-shadow 0.3s ease-in-out;
 
   border-radius: 8px;
   text-align: center;
   padding-bottom: 60px;
-  height: 300px;
+  height: 340px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -53,4 +54,12 @@ export const CardButton = styled.button`
   font-weight: bold;
   color: #222;
   cursor: pointer;
+`
+export const Evaluations = styled.div`
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  padding: 8px;
+  color: #222;
 `

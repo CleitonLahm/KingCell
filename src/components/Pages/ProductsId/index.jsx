@@ -4,6 +4,7 @@ import {BASE_URL_API} from '../../../Api'
 import { useParams } from 'react-router-dom'
 import { ContainerProduct, CardProduct, ImgProduct, PriceProduct } from './styles'
 
+
 import loadingGif from '../../../assets/loading.gif'
 
 const ProductsId = () => {
