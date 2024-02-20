@@ -18,8 +18,8 @@ position: relative;
 
   border-radius: 8px;
   text-align: center;
-  padding-bottom: 60px;
-  height: 340px;
+  padding: 0 8px 40px 8px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
