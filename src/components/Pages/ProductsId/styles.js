@@ -39,10 +39,7 @@ export const ButtonGoBack = styled.button`
   color: #222;
 
   position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 40px;
-
+  top: 30px;
+  left: 30px;
   cursor: pointer;
-
 `

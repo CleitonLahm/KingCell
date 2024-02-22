@@ -1,19 +1,21 @@
-import { HeaderContainer, Titulo, SpanKing, SpanCell, IconItem, IconList, SearchBar,
-Login, LoginContainer } from './styles';
+import { HeaderContainer, TitleContainer, SpanKing, SpanCell, IconItem, IconList, SearchBar, LoginContainer, StyledLink } from './styles';
 
 import carrinho from '../../assets/carrinho.png';
 import contato from '../../assets/contato.png';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
     <HeaderContainer>
-      <Titulo>
-        <SpanKing className='titleKing'>KING</SpanKing>
-        <SpanCell className='titleCell'>STORE</SpanCell>
-      </Titulo>
+      <TitleContainer>
+        <Link to={'/'}>
+          <SpanKing className='titleKing'>KING</SpanKing>
+          <SpanCell className='titleCell'>STORE</SpanCell>
+        </Link>
+      </TitleContainer>
         <SearchBar type="text" placeholder='Pesquise o seu produto'/>
         <LoginContainer>
-        <p>Faça <Login href="#">login</Login> ou <Login href="#">cadastre-se</Login></p>
+        <p>Faça <StyledLink to={'/login'}>login</StyledLink> ou <StyledLink to={'/Login'}>cadastre-se</StyledLink></p>
         </LoginContainer>
       <div className="icons">
         <IconList>

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components"
 
 export const HeaderContainer = styled.div`
@@ -9,7 +10,7 @@ export const HeaderContainer = styled.div`
   color: #fff;
 `;
 
-export const Titulo = styled.div`
+export const TitleContainer = styled.div`
   display: flex;
   align-items: center;
   font-size: 3rem;
@@ -32,10 +33,10 @@ export const SearchBar = styled.input`
 export const LoginContainer = styled.div`
   font-size: 20px;
   font-weight: 400;
-  margin-right: 80px;
+  margin-right: 60px;
 `
 
-export const Login = styled.a`
+export const StyledLink = styled(Link)`
   color: #EE793B;
   font-weight: 700;
 `
