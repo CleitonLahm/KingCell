@@ -46,7 +46,7 @@ const Login = () => {
             >
             </ErrorMessage>
           </div>
-          <button className="button" type="submit">Login</button>
+          <Button className="button" type="submit">Login</Button>
         </CardLogin>
       </Formik>
 

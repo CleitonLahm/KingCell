@@ -1,14 +1,15 @@
-import { ErrorMessage, Field, Form } from "formik"
-import styled from "styled-components"
+import { ErrorMessage, Field, Form } from "formik";
+import styled from "styled-components";
 
 export const LoginContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  margin: 40px;
-`
+  height: 80vh;
+`;
+
 export const CardLogin = styled(Form)`
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);  
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   transition: box-shadow 0.3s ease-in-out;
   border-radius: 8px;
   text-align: center;
@@ -16,22 +17,36 @@ export const CardLogin = styled(Form)`
   width: 300px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 40px;
-  gap: 8px;
-`
+  gap: 16px;
+  margin: 0 16px; 
+`;
 
 export const FormField = styled(Field)`
-  width: 100%;
-  padding: 8px;
-`
+  width: calc(100% - 24px); 
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 0 auto; 
+`;
 
 export const Button = styled.button`
-  width: 100%;
-  padding: 8px 12px;
-`
+  width: calc(100% - 24px);
+  padding: 12px;
+  background-color: #ee793b;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
 
-const FormError = styled(ErrorMessage)`
+  &:hover {
+    background-color: #cc6826;
+  }
+`;
+
+export const FormError = styled(ErrorMessage)`
   color: red;
-`
+`;
