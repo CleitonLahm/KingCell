@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { List, ListLink, CategoriesContainer } from './styles'
 
 import iconOffer from '../../assets/icon-offer.gif'
